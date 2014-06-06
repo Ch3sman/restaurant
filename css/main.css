@@ -97,15 +97,47 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.container {
+	background-color: #E9EAEA;
+}
 
+.test-1 {
+	background-color: pink;
+	height: 200px;
+	width: 100%;
+	text-align: center;
+	position:relative;
+}
 
+.nav-test li {
+	display:inline;
+padding: 20px;
 
+}
 
+.test-2 {
+	background-color: #d55172;
+}
 
+.test-3 {
+	background-color: pink;
+	height: 380px;
+	width: auto;
+	
+	}
 
+.test-4 {
+	background-color: #d55172;
+	width: 50%;
+	float:left;
+	
+}
 
-
-
+.test-5 {
+	background-color: #d55172;
+	width: 50%;
+	float:right;
+}
 
 
 
