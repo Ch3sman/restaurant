@@ -97,54 +97,54 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.container {
-	background-color: #E9EAEA;
+.header {
+    background-color: yellow;
+}  
+
+
+.nav ul {
+    text-align: center;
 }
 
-.test-1 {
-	background-color: pink;
-	height: 200px;
-	width: 100%;
-	text-align: center;
-	position:relative;
+.nav li {
+    display: inline;
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: 
+    }
+
+.title ul {
+    text-align: center;
+     font-family: sans-serif;
+     list-style-position: center;
+     list-style-type: none;
 }
 
-.nav-test li {
-	display:inline;
-padding: 20px;
-
+.six.columns {
+    background-color: yellow;
 }
 
-.test-2 {
-	background-color: #d55172;
+.hours h3 {
+    text-align: right;
 }
 
-.test-3 {
-	background-color: pink;
-	height: 380px;
-	width: auto;
-	
-	}
-
-.test-4 {
-	background-color: #d55172;
-	width: 50%;
-	float:left;
-	
-}
-
-.test-5 {
-	background-color: #d55172;
-	width: 50%;
-	float:right;
+.hours ul {
+    text-align: right;
+    list-style-type: none;
 }
 
 
+.reserve {
+    text-align: center;
+    background-color: yellow;
+}
 
-
-
-
-
+.footer {
+    border-top:solid black 1px;
+    width:auto;
+    background-color: red;
+    padding: 0 0 0 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
