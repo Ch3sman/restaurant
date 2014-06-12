@@ -97,12 +97,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-a:link {text-decoration: none}
-a:visited {text-decoration: none}
-a:active {text-decoration: none}
+.container {
+    background-color: #E9EAEA;
+}
+
+.container .container-small {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
 
 .header {
-    height: 225px;
     background-color: #fed159;
 }  
 
@@ -115,27 +120,40 @@ a:active {text-decoration: none}
 .nav li, a {
     display: inline;
     font-family: sans-serif;
-    padding: 20px;
+    padding: 17px;
     text-decoration: none;
     font-family: 'ostrich_sansblack' sans-serif;
-    font-size: 20px;
-    font-
+    font-size: 25pt;
     }
 
-.about {
-    background-color: #fed159;
+.header-nav a {
+    color: #DC4D3E;
+    -webkit-transition: color .3s linear;
+            transition: color .3s linear;
 }
 
-.title ul {
+.header-nav a:hover {
+    color: black;
+}
+
+
+.title-name {
+    font-size: 128pt;
+    font-family: 'ostrich_sansbold';
+    font-weight: normal; 
     text-align: center;
-    font-size: 10em;
-     font-family: sans-serif;
-     list-style-position: center;
-     list-style-type: none;
+    padding: 0;
+    margin-top: -55px;
+    margin-bottom: -55px;
 }
 
-.six.columns {
-    background-color: yellow;
+.title-location {
+    font-size: 25pt;
+    font-family: 'ostrich_sansblack';
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .hours h3 {
@@ -147,18 +165,38 @@ a:active {text-decoration: none}
     list-style-type: none;
 }
 
+.menu-section {
+    background-color: #fed159;
+}
 
 .reserve {
-    text-align: center;
-    background-color: yellow;
+
 }
 
 .footer {
     border-top:solid black 1px;
     width:auto;
-    background-color: red;
-    padding: 0 0 0 0;
+    background-color: #DC4D3E;
+    padding: 0 0 1px;
 }
+
+.footer img {
+    padding: 10px;
+    float: top left;
+}
+
+.footer p {
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+@media only screen and (max-width: 767px) {
+    .title-heading {
+        font-size: 12px;
+    }
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
