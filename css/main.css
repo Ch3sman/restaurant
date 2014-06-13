@@ -97,21 +97,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.container {
-    background-color: #E9EAEA;
-}
+/* container adjustments
+----------------------------------------------*/
+.container {background-color: #E9EAEA;}
 
-.container .container-small {
-    float: none;
-    display: block;
-    margin: 0 auto;
-}
+.container .container-small {float: none;
+                             display: block;
+                             margin: 0 auto;}
 
+
+/* Header & Navigation
+----------------------------------------------*/
 .header {
     background-color: #fed159;
 }  
-
-
 
 .nav ul {
     text-align: center;
@@ -156,6 +155,20 @@ textarea {
     padding: 0;
 }
 
+/* Master Card #badpun
+----------------------------------------------*/
+.menu-section h4,
+              h3,
+              h2 {
+                text-align: center;
+}
+
+/* About & Hours -- First Card
+----------------------------------------------*/
+#first-card {
+    background-color: #F89D46;
+} 
+
 .hours h3 {
     text-align: right;
 }
@@ -165,14 +178,77 @@ textarea {
     list-style-type: none;
 }
 
-.menu-section {
+
+/* Reservations -- Second Card
+----------------------------------------------*/
+#second-card {
+    background-color: #DC4D3E;
+    }
+
+/* Menu: Beer Snacks -- Third Card
+----------------------------------------------*/
+#third-card {
     background-color: #fed159;
-}
+} 
 
-.reserve {
+/* Menu: From the Salt House -- Fourth Card
+----------------------------------------------*/
+#fourth-card {
+    background-color: #F89D46;
+} 
 
-}
+/* Menu: Salads -- Fifth Card
+----------------------------------------------*/
+#fifth-card {
+    background-color: #DC4D3E;
+} 
 
+/* Menu: Dry-aged butcher's cuts -- Sixth Card
+----------------------------------------------*/
+#sixth-card {
+    background-color: #fed159;
+} 
+
+/* Menu: Sandwiches -- Seventh Card
+----------------------------------------------*/
+#seventh-card {
+    background-color: #F89D46;
+} 
+
+/* Menu: Varieties -- Eighth Card
+----------------------------------------------*/
+#eighth-card {
+    background-color: #DC4D3E;
+} 
+
+/* Menu: Sausages -- Nineth Card
+----------------------------------------------*/
+#nineth-card {
+    background-color: #fed159;
+} 
+
+/* Menu: Hearth Vegetables -- Tenth Card
+----------------------------------------------*/
+#tenth-card {
+    background-color: #F89D46;
+} 
+
+/* Menu: On The Side -- Eleventh Card
+----------------------------------------------*/
+#eleventh-card {
+    background-color: #DC4D3E;
+} 
+
+/* Menu: Wine & Spirits -- Twelveth Card
+----------------------------------------------*/
+#twelveth-card {
+    background-color: #fed159;
+} 
+
+
+
+/* Footer
+----------------------------------------------*/
 .footer {
     border-top:solid black 1px;
     width:auto;
@@ -190,6 +266,19 @@ textarea {
     padding: 5px;
     margin: 5px;
 }
+
+/* Media Queries
+----------------------------------------------*/
+@media only screen and (max-width: 959px) {
+    .title-heading {
+        font-size: 96pt;
+    }
+    .title-location {
+        font-size: 18pt;
+    }
+    .nav li, a  {
+        font-size: 18pt;
+    }
 @media only screen and (max-width: 767px) {
     .title-heading {
         font-size: 12px;
