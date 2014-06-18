@@ -97,8 +97,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* effects all
+.menu-section {height: 150px;} */
+
 /* container adjustments
 ----------------------------------------------*/
+.bg {
+    background-color: #22252a;
+}
+
 .container {background-color: #E9EAEA;}
 
 .container .container-small {float: none;
@@ -110,22 +117,27 @@ textarea {
 ----------------------------------------------*/
 .header {
     background-color: #fed159;
+    border-radius: 0 0 30px 30px;
 }  
 
-.nav ul {
+.nav ul,
+.nav li, 
+.nav a {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav {
     text-align: center;
 }
 
-.nav li, a {
-    display: inline;
+.header-nav a {
     font-family: sans-serif;
     padding: 17px;
     text-decoration: none;
     font-family: 'ostrich_sansblack' sans-serif;
     font-size: 25pt;
-    }
-
-.header-nav a {
     color: #DC4D3E;
     -webkit-transition: color .3s linear;
             transition: color .3s linear;
@@ -157,16 +169,33 @@ textarea {
 
 /* Master Card #badpun
 ----------------------------------------------*/
-.menu-section h4,
-              h3,
-              h2 {
-                text-align: center;
+.menu-section {border-radius: 15px 15px 15px 15px;}
+.menu-section h4, h3, h2 {
+    text-align: center;
+    font-family: 'ostrich_sansblack';
+    font-weight: normal;
+    }
+
+.menu-section h3 { 
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
+.menu-section h2 {
+    margin: 0;
+    line-height: 20px;
+}
+
 
 /* About & Hours -- First Card
 ----------------------------------------------*/
 #first-card {
+    height: 270px;
+    border-radius: 15px 15px 15px 15px;
     background-color: #F89D46;
+    background-image: url(http://i59.tinypic.com/209lu0h.jpg);
+
 } 
 
 .hours h3 {
@@ -182,7 +211,10 @@ textarea {
 /* Reservations -- Second Card
 ----------------------------------------------*/
 #second-card {
+    height: 270px;
     background-color: #DC4D3E;
+    background-image: url(http://i58.tinypic.com/fnv02e.jpg);
+
     }
 
 /* Menu: Beer Snacks -- Third Card
@@ -249,22 +281,37 @@ textarea {
 
 /* Footer
 ----------------------------------------------*/
+
 .footer {
-    border-top:solid black 1px;
-    width:auto;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:100%;
+    font-size: 12pt;
+    border-top:solid white 1px;
     background-color: #DC4D3E;
     padding: 0 0 1px;
 }
 
-.footer img {
-    padding: 10px;
-    float: top left;
+.footer-left ul, li, a {
+    display: inline-block;
+    padding: 2px 0px 3px 0px;
+    padding-left: 1px;
+    margin: 0;
 }
 
-.footer p {
-    text-align: left;
-    padding: 5px;
-    margin: 5px;
+.footer-right p {
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14pt;
+    font-family: 'ostrich_sansblack';
+    font-weight: normal;
+    color: #fff;
+}
+
+#footer {
+    background-color: #DC4D3E;
 }
 
 /* Media Queries
