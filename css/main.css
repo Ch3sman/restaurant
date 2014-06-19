@@ -169,12 +169,14 @@ textarea {
 
 /* Master Card #badpun
 ----------------------------------------------*/
-.menu-section {border-radius: 15px 15px 15px 15px;}
+.container .menu-section { margin-bottom: 15px; border-radius: 15px 15px 15px 15px;}
+
 .menu-section h4, h3, h2 {
     text-align: center;
     font-family: 'ostrich_sansblack';
     font-weight: normal;
     }
+
 
 .menu-section h3 { 
     margin: 0;
@@ -191,31 +193,140 @@ textarea {
 /* About & Hours -- First Card
 ----------------------------------------------*/
 #first-card {
+    position: relative;
     height: 270px;
     border-radius: 15px 15px 15px 15px;
     background-color: #F89D46;
     background-image: url(http://i59.tinypic.com/209lu0h.jpg);
-
+    color: #fff;
+    overflow: hidden; /* quickly clears floats, instead of using clearfix */
 } 
 
-.hours h3 {
-    text-align: right;
+#first-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
 }
 
-.hours ul {
-    text-align: right;
+#first-left h3, p {
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#first-left h3 {text-align: center;
+                letter-spacing: 2px;}
+
+.hours h3, h4 {
+    font-size: 1.17em;
+    text-align: left;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    margin-right: 20px;
+
+}
+
+.hours h3 {margin-top: 20px;}
+
+.hours h4 {margin-top: 10px;}
+
+.hours ul, li {
+    text-align: center;
+    text-decoration: none;
     list-style-type: none;
+    padding: 0;
+    margin: -5px;
+    margin-right: 20px;
 }
 
 
 /* Reservations -- Second Card
 ----------------------------------------------*/
 #second-card {
+    position: relative;
     height: 270px;
     background-color: #DC4D3E;
     background-image: url(http://i58.tinypic.com/fnv02e.jpg);
-
+    overflow: hidden;
     }
+
+.card-content {
+    position: relative;
+    z-index: 2;
+    }
+
+#second-card #reservation.card-content h3 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#second-card #reservation.card-content h4 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#second-card p {
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+   margin: 30px;
+
+}
+
+    #second-card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+    }
+
+.button a {
+    border-radius: 15px 15px 15px 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #E9EAEA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: -10px;
+    padding-right: -10px;
+    margin: 30px;
+    text-align: center;
+    position: absolute;
+    left: 38%;
+    top: 90%;
+    width: 100px;
+}
+
+
+.button a:link {text-decoration: none;
+        color: #E9EAEA;}
+.button a:visited {text-decoration: none;
+        color: #E9EAEA;}
+.button a:hover {text-decoration: none;
+        color: #E9EAEA;}
+.button a:active {text-decoration: none;
+        color: #E9EAEA;}
 
 /* Menu: Beer Snacks -- Third Card
 ----------------------------------------------*/
@@ -223,11 +334,67 @@ textarea {
     background-color: #fed159;
 } 
 
+.menu-lead {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul.leaders {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: #fed159}
+ul.leaders span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #fed159;
+    z-index: 1}
+/* Credit to W3C for the menu examples */
+
+
+
 /* Menu: From the Salt House -- Fourth Card
 ----------------------------------------------*/
 #fourth-card {
     background-color: #F89D46;
 } 
+
+ul.leaders-two {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders-two li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders-two span:first-child {
+    padding-right: 0.33em;
+    background: #F89D46}
+ul.leaders-two span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #F89D46;
+    z-index: 1}
 
 /* Menu: Salads -- Fifth Card
 ----------------------------------------------*/
@@ -235,11 +402,59 @@ textarea {
     background-color: #DC4D3E;
 } 
 
+ul.leaders-three {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders-three li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders-three span:first-child {
+    padding-right: 0.33em;
+    background: #DC4D3E}
+ul.leaders-three span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #DC4D3E;
+    z-index: 1}
+
 /* Menu: Dry-aged butcher's cuts -- Sixth Card
 ----------------------------------------------*/
 #sixth-card {
     background-color: #fed159;
 } 
+
+ul.leaders-four {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders-four li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders-four span:first-child {
+    padding-right: 0.33em;
+    background: #fed159}
+ul.leaders-four span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #fed159;
+    z-index: 1}
 
 /* Menu: Sandwiches -- Seventh Card
 ----------------------------------------------*/
@@ -247,11 +462,59 @@ textarea {
     background-color: #F89D46;
 } 
 
+ul.leaders-five {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders-five li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders-five span:first-child {
+    padding-right: 0.33em;
+    background: #F89D46}
+ul.leaders-five span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #F89D46;
+    z-index: 1}
+
 /* Menu: Varieties -- Eighth Card
 ----------------------------------------------*/
 #eighth-card {
     background-color: #DC4D3E;
 } 
+
+ul.leaders-six {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders-six li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders-six span:first-child {
+    padding-right: 0.33em;
+    background: #DC4D3E}
+ul.leaders-six span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #DC4D3E;
+    z-index: 1}
 
 /* Menu: Sausages -- Nineth Card
 ----------------------------------------------*/
@@ -259,17 +522,89 @@ textarea {
     background-color: #fed159;
 } 
 
+ul.leaders-seven {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders-seven li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders-seven span:first-child {
+    padding-right: 0.33em;
+    background: #fed159}
+ul.leaders-seven span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #fed159;
+    z-index: 1}
+
 /* Menu: Hearth Vegetables -- Tenth Card
 ----------------------------------------------*/
 #tenth-card {
     background-color: #F89D46;
 } 
 
+ul.leaders-eight {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders-eight li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders-eight span:first-child {
+    padding-right: 0.33em;
+    background: #F89D46}
+ul.leaders-eight span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #F89D46;
+    z-index: 1}
+
 /* Menu: On The Side -- Eleventh Card
 ----------------------------------------------*/
 #eleventh-card {
     background-color: #DC4D3E;
 } 
+
+ul.leaders-nine {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders-nine li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders-nine span:first-child {
+    padding-right: 0.33em;
+    background: #DC4D3E}
+ul.leaders-nine span {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    background: #DC4D3E;
+    z-index: 1}
 
 /* Menu: Wine & Spirits -- Twelveth Card
 ----------------------------------------------*/
@@ -286,6 +621,7 @@ textarea {
     position: fixed;
     bottom: 0;
     left:0;
+    z-index: 50;
     width:100%;
     font-size: 12pt;
     border-top:solid white 1px;
